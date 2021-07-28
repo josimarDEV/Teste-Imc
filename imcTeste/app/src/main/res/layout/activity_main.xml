@@ -144,7 +144,8 @@
         android:textAlignment="viewStart"
         app:layout_constraintBottom_toBottomOf="@id/guideline2"
         app:layout_constraintEnd_toEndOf="@id/alturaline"
-        app:layout_constraintTop_toTopOf="@id/guideline1" />
+        app:layout_constraintTop_toTopOf="@id/guideline1"
+        android:visibility="gone"/>
 
     <TextView
         android:id="@+id/abaixo2"
@@ -154,6 +155,34 @@
         android:layout_marginStart="10dp"
         android:background="#0EE4CB"
         android:text="abaixo do peso"
+        android:textAlignment="viewStart"
+        app:layout_constraintBottom_toTopOf="@+id/guideline2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/ideal"
+        app:layout_constraintTop_toTopOf="@+id/guideline1"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/abaixo3"
+        style="@style/grafico"
+        android:layout_width="170dp"
+        android:layout_height="40dp"
+        android:background="@color/white"
+        android:hint="abaixo de 18.5"
+        android:textAlignment="viewStart"
+        app:layout_constraintBottom_toBottomOf="@id/guideline2"
+        app:layout_constraintEnd_toEndOf="@id/alturaline"
+        app:layout_constraintTop_toTopOf="@id/guideline1"/>
+
+    <TextView
+        android:id="@+id/abaixo4"
+        style="@style/grafico"
+        android:layout_width="230dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="10dp"
+        android:background="@color/white"
+        android:hint="abaixo do peso"
         android:textAlignment="viewStart"
         app:layout_constraintBottom_toTopOf="@+id/guideline2"
         app:layout_constraintEnd_toEndOf="parent"
@@ -171,7 +200,8 @@
         android:textAlignment="viewStart"
         app:layout_constraintBottom_toBottomOf="@id/guideline3"
         app:layout_constraintEnd_toStartOf="@id/alturaline"
-        app:layout_constraintTop_toTopOf="@id/guideline2" />
+        app:layout_constraintTop_toTopOf="@id/guideline2"
+        android:visibility="invisible"/>
 
     <TextView
         android:id="@+id/ideal2"
@@ -186,7 +216,37 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/ideal"
-        app:layout_constraintTop_toTopOf="@+id/guideline2"/>
+        app:layout_constraintTop_toTopOf="@+id/guideline2"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:id="@+id/ideal3"
+        style="@style/grafico"
+        android:layout_width="170dp"
+        android:layout_height="40dp"
+        android:background="@color/white"
+        android:hint="entre 18.6 e 24.9"
+        android:textAlignment="viewStart"
+        app:layout_constraintBottom_toBottomOf="@id/guideline3"
+        app:layout_constraintEnd_toStartOf="@id/alturaline"
+        app:layout_constraintTop_toTopOf="@id/guideline2"
+        android:visibility="visible"/>
+
+    <TextView
+        android:id="@+id/ideal4"
+        style="@style/grafico"
+        android:layout_width="230dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="10dp"
+        android:background="@color/white"
+        android:hint="peso ideal"
+        android:textAlignment="viewStart"
+        app:layout_constraintBottom_toTopOf="@+id/guideline3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/ideal"
+        app:layout_constraintTop_toTopOf="@+id/guideline2"
+        android:visibility="visible"/>
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/alturaline"
@@ -206,7 +266,8 @@
         android:textAlignment="viewStart"
         app:layout_constraintBottom_toBottomOf="@id/guideline4"
         app:layout_constraintEnd_toStartOf="@id/alturaline"
-        app:layout_constraintTop_toTopOf="@id/guideline3" />
+        app:layout_constraintTop_toTopOf="@id/guideline3"
+        android:visibility="invisible"/>
 
     <TextView
         android:id="@+id/acima2"
@@ -221,7 +282,37 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/ideal"
-        app:layout_constraintTop_toTopOf="@+id/guideline3"/>
+        app:layout_constraintTop_toTopOf="@+id/guideline3"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:id="@+id/acima3"
+        style="@style/grafico"
+        android:layout_width="170dp"
+        android:layout_height="40dp"
+        android:background="@color/white"
+        android:hint="entre 25.0 e 29.9"
+        android:textAlignment="viewStart"
+        app:layout_constraintBottom_toBottomOf="@id/guideline4"
+        app:layout_constraintEnd_toStartOf="@id/alturaline"
+        app:layout_constraintTop_toTopOf="@id/guideline3"
+        android:visibility="visible"/>
+
+    <TextView
+        android:id="@+id/acima4"
+        style="@style/grafico"
+        android:layout_width="230dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="10dp"
+        android:background="@color/white"
+        android:hint="levemente acima do peso"
+        android:textAlignment="viewStart"
+        app:layout_constraintBottom_toTopOf="@+id/guideline4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/ideal"
+        app:layout_constraintTop_toTopOf="@+id/guideline3"
+        android:visibility="visible"/>
 
     <TextView
         android:id="@+id/grau1"
@@ -233,7 +324,8 @@
         android:textAlignment="viewStart"
         app:layout_constraintBottom_toBottomOf="@id/guideline5"
         app:layout_constraintEnd_toStartOf="@id/alturaline"
-        app:layout_constraintTop_toTopOf="@id/guideline4" />
+        app:layout_constraintTop_toTopOf="@id/guideline4"
+        android:visibility="invisible"/>
 
     <TextView
         android:id="@+id/grau1.1"
@@ -248,7 +340,37 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/ideal"
-        app:layout_constraintTop_toTopOf="@+id/guideline4"/>
+        app:layout_constraintTop_toTopOf="@+id/guideline4"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:id="@+id/grau1.2"
+        style="@style/grafico"
+        android:layout_width="170dp"
+        android:layout_height="40dp"
+        android:background="@color/white"
+        android:hint="entre 30.0 e 34.9"
+        android:textAlignment="viewStart"
+        app:layout_constraintBottom_toBottomOf="@id/guideline5"
+        app:layout_constraintEnd_toStartOf="@id/alturaline"
+        app:layout_constraintTop_toTopOf="@id/guideline4"
+        android:visibility="visible"/>
+
+    <TextView
+        android:id="@+id/grau1.3"
+        style="@style/grafico"
+        android:layout_width="230dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="10dp"
+        android:background="@color/white"
+        android:hint="obesidade grau 1"
+        android:textAlignment="viewStart"
+        app:layout_constraintBottom_toTopOf="@+id/guideline5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/ideal"
+        app:layout_constraintTop_toTopOf="@+id/guideline4"
+        android:visibility="visible"/>
 
     <TextView
         android:id="@+id/grau2"
@@ -260,7 +382,8 @@
         android:textAlignment="viewStart"
         app:layout_constraintBottom_toBottomOf="@id/guideline6"
         app:layout_constraintEnd_toStartOf="@id/alturaline"
-        app:layout_constraintTop_toTopOf="@id/guideline5" />
+        app:layout_constraintTop_toTopOf="@id/guideline5"
+        android:visibility="invisible"/>
 
     <TextView
         android:id="@+id/grau2.1"
@@ -275,7 +398,37 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/ideal"
-        app:layout_constraintTop_toTopOf="@+id/guideline5"/>
+        app:layout_constraintTop_toTopOf="@+id/guideline5"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:id="@+id/grau2.2"
+        style="@style/grafico"
+        android:layout_width="170dp"
+        android:layout_height="40dp"
+        android:background="@color/white"
+        android:hint="entre 35.0 e 39.9"
+        android:textAlignment="viewStart"
+        app:layout_constraintBottom_toBottomOf="@id/guideline6"
+        app:layout_constraintEnd_toStartOf="@id/alturaline"
+        app:layout_constraintTop_toTopOf="@id/guideline5"
+        android:visibility="visible"/>
+
+    <TextView
+        android:id="@+id/grau2.3"
+        style="@style/grafico"
+        android:layout_width="230dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="10dp"
+        android:background="@color/white"
+        android:hint="obesidade grau 2 (severa)"
+        android:textAlignment="viewStart"
+        app:layout_constraintBottom_toTopOf="@+id/guideline6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/ideal"
+        app:layout_constraintTop_toTopOf="@+id/guideline5"
+        android:visibility="visible"/>
 
     <TextView
         android:id="@+id/grau3"
@@ -287,7 +440,8 @@
         android:textAlignment="viewStart"
         app:layout_constraintBottom_toBottomOf="@id/guideline7"
         app:layout_constraintEnd_toStartOf="@id/alturaline"
-        app:layout_constraintTop_toTopOf="@id/guideline6" />
+        app:layout_constraintTop_toTopOf="@id/guideline6"
+        android:visibility="invisible"/>
 
     <TextView
         android:id="@+id/grau3.1"
@@ -302,7 +456,37 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/ideal"
-        app:layout_constraintTop_toTopOf="@+id/guideline6"/>
+        app:layout_constraintTop_toTopOf="@+id/guideline6"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:id="@+id/grau3.2"
+        style="@style/grafico"
+        android:layout_width="170dp"
+        android:layout_height="40dp"
+        android:background="@color/white"
+        android:hint="acima de 40"
+        android:textAlignment="viewStart"
+        app:layout_constraintBottom_toBottomOf="@id/guideline7"
+        app:layout_constraintEnd_toStartOf="@id/alturaline"
+        app:layout_constraintTop_toTopOf="@id/guideline6"
+        android:visibility="visible"/>
+
+    <TextView
+        android:id="@+id/grau3.3"
+        style="@style/grafico"
+        android:layout_width="230dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="10dp"
+        android:background="@color/white"
+        android:hint="obesidade 3 (mórbida)"
+        android:textAlignment="viewStart"
+        app:layout_constraintBottom_toTopOf="@+id/guideline7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/ideal"
+        app:layout_constraintTop_toTopOf="@+id/guideline6"
+        android:visibility="visible"/>
 
     <TextView
         android:id="@+id/resultado"
